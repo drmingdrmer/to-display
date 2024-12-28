@@ -1,0 +1,38 @@
+[workspace]
+members = [
+  "to-display",
+  "to-display-derive",
+]
+resolver = "2"
+
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Zhang Yanpo <your.email@example.com>"]
+
+description = "A trait that is Display or can be converted to Display"
+documentation = "https://docs.rs/to-display"
+homepage = "https://github.com/drmingdrmer/to-display"
+repository = "https://github.com/drmingdrmer/to-display"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+
+keywords = ["display", "formatting", "conversion", "traits"]
+categories = [
+    "algorithms",
+    "data-structures",
+    "development-tools",
+    "rust-patterns",
+]
+
+[workspace.dependencies]
+# criterion = "0.5"    # For benchmarking
+pretty_assertions = "1.4"  # For better test assertions
+
+chrono = { version = "0.4" }
+proc-macro2 = "1.0"
+quote = "1.0"
+semver = "1.0.14"
+syn = "2.0"
+

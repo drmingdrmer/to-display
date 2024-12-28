@@ -1,0 +1,27 @@
+[package]
+name = "to-display"
+
+edition.workspace = true
+version.workspace = true
+
+categories.workspace = true
+description.workspace = true
+documentation.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+license.workspace = true
+readme.workspace = true
+repository.workspace = true
+
+
+[dependencies]
+to-display-derive = { version = "0.1.0", path = "../to-display-derive" }
+chrono = { version = "0.4", features = [], optional = true }
+tokio = { version = "1", optional = true }
+
+[dev-dependencies]
+regex = "1.11.1"
+
+[features]
+std-time = ["dep:chrono"]
+tokio-time = ["std-time", "tokio/time"]
