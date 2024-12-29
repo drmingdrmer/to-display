@@ -15,7 +15,7 @@ repository.workspace = true
 
 
 [dependencies]
-to-display-derive = { version = "0.1.0", path = "../to-display-derive" }
+to-display-derive = { version = "0.1", path = "../to-display-derive" }
 chrono = { version = "0.4", features = [], optional = true }
 tokio = { version = "1", optional = true }
 
